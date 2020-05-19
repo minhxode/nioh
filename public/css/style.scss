@@ -1,0 +1,26 @@
+@import './header';
+@import './variables';
+
+body{
+    background-color: $fouCl;
+    overflow: hidden;
+}
+
+.welcome 
+{
+    @extend header;
+    
+    width: 102%;
+    margin-left: -1%;
+    background: $fifCl;
+    button{
+    background: $secCl;
+    font-size: xx-small;
+    font-weight: lighter;
+    &:hover {
+        background: $priCl;
+        font-size: medium;
+        font-weight: bolder;
+        }
+    }
+}

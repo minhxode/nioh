@@ -1,0 +1,33 @@
+@import './variables';
+
+@mixin flexCenter($direction, $background) {
+    display: flex;
+    // justify-content: center;
+    align-content: center;
+    flex-direction: $direction;
+    background: $background;
+    
+}
+
+header{
+    @include flexCenter(center, $thiCl);
+    height: 45vh;
+    margin-left: -1%;
+    width: 102%;
+    button{
+        margin-left: 0;
+        background: $priCl;
+        height: 10vh;
+        width: 15vw;
+        font-size: medium;
+        font-weight: bold;
+        &:hover {
+            background: $secCl;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        // &::after{
+        //     content: ''
+        // }
+    }
+}

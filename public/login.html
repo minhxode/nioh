@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style1.css"
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Animated Login Form</title>
+    <script src=https://kit.fontawesome.com/a81368914c.js></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav>
+      <div class="title">
+        <h4>Two đu list</h4>
+      </div>
+      <div class="hammer">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- <img class="wave" src="img/wave.png"> -->
+    <!-- <img class="wave" src="img/bg12big.jpg"> -->
+    <img class="fbg" src="img/bg12big.jpg">
+    <img class="bbg" src="img/bgflip.jpg">
+    <div id="root" class="container">
+      <div class="img">
+        <img src="img/to_do_list.svg">
+      </div>
+     
+      <div class="login-container">
+        <div class="container-header" action="index.html">
+          <!-- Avatar -->
+          <div class="avatar-icon">
+            <img class="avatar" src="img/avatar.svg">
+          </div>
+          <!-- Button box -->
+          <div class="button-box">
+            <!-- <h2>Welcome</h2> -->
+              <div id="scroll-btn-div"></div>
+              <button type="button" class="toggle-btn" onclick="login()">Login</button>
+              <button type="button" class="toggle-btn" onclick="register()">Register</button>
+          </div>
+          <!-- Social icons -->
+          <div class="social-icons">
+            <img src="./img/facebook.png">
+            <img src="./img/google-plus.png">
+            <img src="./img/twitter.png">
+            <img src="./img/instagram.png">
+          </div>
+          <!-- Forms -->
+          <!-- Login form -->
+          <div id = "login" class="container-form">
+            <div class="input-div one">
+              <div class="i">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <h5>Username</h5>
+                <input class="input" type="text">
+              </div>
+            </div>
+            <div class="input-div two">
+              <div class="i">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div>
+                <h5>Password</h5>
+                <input class="input" type="password">
+              </div>
+            </div>
+            <!-- <input type="checkbox" class="check-box"><a>Remember password</a> -->
+            <a href="#">Forgot password?</a>
+            <input type="submit" class="btn" value="Login">
+          </div>
+        
+          <!-- Register form -->  
+          <div id = "register" class="container-form">
+            <div class="input-div one">
+              <div class="i">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <h5>Username</h5>
+                <input class="input" type="text" required>
+              </div>
+            </div>
+            <div class="input-div one">
+              <div class="i">
+                <i class="fas fa-address-book"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <input class="input" type="email" required>
+              </div>
+            </div>
+            <div class="input-div one">
+              <div class="i">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div>
+                <h5>Password</h5>
+                <input class="input" type="password" required>
+              </div>
+            </div>
+            <div class="input-div two">
+              <div class="i">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div>
+                <h5>Re-type password</h5>
+                <input class="input" type="password" required>
+              </div>
+            </div>
+            <input type="submit" class="btn" value="Register">
+            <input type="checkbox" class="check-box" ><span> I agree to terms and conditions</span>
+          </div>
+        
+          
+          
+          
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

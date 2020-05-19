@@ -1,0 +1,54 @@
+header, .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  background: #146da0;
+  height: 45vh;
+  margin-left: -1%;
+  width: 102%;
+}
+
+header button, .welcome button {
+  margin-left: 0;
+  background: #e65614;
+  height: 10vh;
+  width: 15vw;
+  font-size: medium;
+  font-weight: bold;
+}
+
+header button:hover, .welcome button:hover {
+  background: #ceb904;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+body {
+  background-color: #04d2e0;
+  overflow: hidden;
+}
+
+.welcome {
+  width: 102%;
+  margin-left: -1%;
+  background: #004b13;
+}
+
+.welcome button {
+  background: #ceb904;
+  font-size: xx-small;
+  font-weight: lighter;
+}
+
+.welcome button:hover {
+  background: #e65614;
+  font-size: medium;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */
