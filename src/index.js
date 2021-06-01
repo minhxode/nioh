@@ -4,8 +4,8 @@ import App from './App';
 import {createStore} from 'redux';
 import allFckingReducers from './components/Redux/Reducers'
 import {Provider} from 'react-redux'
-import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
-import {Links, Routes} from './components/Navbar';
+import { BrowserRouter as Router} from 'react-router-dom';
+
 
 
 //STORE: Data storage for all components (globalized state)

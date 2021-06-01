@@ -1,19 +1,14 @@
-import React, {useState, useRef, useEffect, Component} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import './App.css';
 import TodoList from "./TodoList";
 import uuidv4 from 'uuid/v4';
-import {useSelector, useDispatch} from 'react-redux';
-import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
-import {NavLinks, NavRoutes} from './components/Navbar';
+import {NavRoutes} from './components/Navbar';
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos.whateveryouwanttocallit.friendo'
 
 
 function App() {
 
-    const isLoggedState = useSelector(state => state.isLogged);
-    const dispatch = useDispatch();
     const[scrollDepth, setScrollDepth] = useState(0)
 
     function determineUserScrollDepth() {
