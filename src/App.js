@@ -3,6 +3,7 @@ import './App.css';
 import TodoList from "./TodoList";
 import uuidv4 from 'uuid/v4';
 import {NavRoutes} from './components/Navbar';
+import {NavRoutes} from './components/Navbar';
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos.whateveryouwanttocallit.friendo'
 
