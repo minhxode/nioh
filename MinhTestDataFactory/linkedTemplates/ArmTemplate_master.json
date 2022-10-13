@@ -1,0 +1,119 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "MinhTestDataFactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
+		"AzureMySql1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureMySql1'"
+		},
+		"AzureTableStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureTableStorage1'"
+		},
+		"FtpServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'FtpServer1'"
+		},
+		"Microsoft3651_servicePrincipalKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'servicePrincipalKey' of 'Microsoft3651'"
+		},
+		"Sftp1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'Sftp1'"
+		},
+		"FtpServer1_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "195.144.107.198"
+		},
+		"FtpServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "demo"
+		},
+		"Microsoft3651_properties_typeProperties_servicePrincipalId": {
+			"type": "string",
+			"defaultValue": "minhln"
+		},
+		"Sftp1_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "195.144.107.198"
+		},
+		"Sftp1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "demo"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "MinhTestDataFactory_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"AzureMySql1_connectionString": {
+						"value": "[parameters('AzureMySql1_connectionString')]"
+					},
+					"AzureTableStorage1_connectionString": {
+						"value": "[parameters('AzureTableStorage1_connectionString')]"
+					},
+					"FtpServer1_password": {
+						"value": "[parameters('FtpServer1_password')]"
+					},
+					"Microsoft3651_servicePrincipalKey": {
+						"value": "[parameters('Microsoft3651_servicePrincipalKey')]"
+					},
+					"Sftp1_password": {
+						"value": "[parameters('Sftp1_password')]"
+					},
+					"FtpServer1_properties_typeProperties_host": {
+						"value": "[parameters('FtpServer1_properties_typeProperties_host')]"
+					},
+					"FtpServer1_properties_typeProperties_userName": {
+						"value": "[parameters('FtpServer1_properties_typeProperties_userName')]"
+					},
+					"Microsoft3651_properties_typeProperties_servicePrincipalId": {
+						"value": "[parameters('Microsoft3651_properties_typeProperties_servicePrincipalId')]"
+					},
+					"Sftp1_properties_typeProperties_host": {
+						"value": "[parameters('Sftp1_properties_typeProperties_host')]"
+					},
+					"Sftp1_properties_typeProperties_userName": {
+						"value": "[parameters('Sftp1_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

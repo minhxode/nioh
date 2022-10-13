@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "MinhTestDataFactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureMySql1_connectionString": {
+			"value": ""
+		},
+		"AzureTableStorage1_connectionString": {
+			"value": ""
+		},
+		"FtpServer1_password": {
+			"value": ""
+		},
+		"Microsoft3651_servicePrincipalKey": {
+			"value": ""
+		},
+		"Sftp1_password": {
+			"value": ""
+		},
+		"FtpServer1_properties_typeProperties_host": {
+			"value": "195.144.107.198"
+		},
+		"FtpServer1_properties_typeProperties_userName": {
+			"value": "demo"
+		},
+		"Microsoft3651_properties_typeProperties_servicePrincipalId": {
+			"value": "minhln"
+		},
+		"Sftp1_properties_typeProperties_host": {
+			"value": "195.144.107.198"
+		},
+		"Sftp1_properties_typeProperties_userName": {
+			"value": "demo"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
