@@ -1,0 +1,9 @@
+{
+	"name": "MinhTestDataFactory",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d04c6d7f-b1ea-46ed-84cf-de7ee93f34ea",
+		"tenantId": "e74b02f8-53d5-4068-b704-5767625f13a5"
+	}
+}
